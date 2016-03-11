@@ -27,9 +27,9 @@
     <div class="banner">
         <div class="flicker-example" data-block-text="false">
             <ul>
-                <li data-background="letv.com/vedio/field.jpg" onclick=jumpAd("{{$ads[1]}}")></li>
-                <li data-background="letv.com/vedio/forest.jpg" onclick=jumpAd("{{$ads[2]}}")></li>
-                <li data-background="letv.com/vedio/frozen-water.jpg" onclick=jumpAd("{{$ads[3]}}")></li>
+                <li data-background="letv.com/vedio/field.jpg" onclick=jumpAd("{{$ads[1]}}",1)></li>
+                <li data-background="letv.com/vedio/forest.jpg" onclick=jumpAd("{{$ads[2]}}",2)></li>
+                <li data-background="letv.com/vedio/frozen-water.jpg" onclick=jumpAd("{{$ads[3]}}",3)></li>
             </ul>
         </div>
     </div>
@@ -892,12 +892,12 @@
                 <div class="hot_display">
                     <div class="flicker-example" data-block-text="false">
                         <ul>
-                            <li data-background="img/tadu.jpg" onclick=jumpAd("{{$ads[3]}}")>
+                            <li data-background="img/tadu.jpg" onclick=jumpAd("{{$ads[4]}}",4)>
                                 <!-- <div class="flick-title">Flickerplate Is Working</div>
                     <div class="flick-sub-text">Heaven forbid this package you downloaded is broken. That wouldn't be embarrassing at all.</div> -->
                             </li>
-                            <li data-background="img/forest.jpg" onclick=jumpAd("{{$ads[4]}}")></li>
-                            <li data-background="img/frozen-water.jpg" onclick=jumpAd("{{$ads[5]}}")></li>
+                            <li data-background="img/forest.jpg" onclick=jumpAd("{{$ads[5]}}",5)></li>
+                            <li data-background="img/frozen-water.jpg" onclick=jumpAd("{{$ads[6]}}",6)></li>
                         </ul>
                     </div>
                     <ul class="hot_apps">
@@ -941,7 +941,7 @@
 
 <script type="text/javascript" src="js/index.js"></script>
 <script>
-    function jumpAd(url){
+    function jumpAd(url,position){
         window.location.href=url;
     }
 </script>
