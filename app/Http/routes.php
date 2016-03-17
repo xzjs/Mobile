@@ -12,6 +12,7 @@
 */
 
 use App\Ad;
+use App\Mac;
 use Illuminate\Http\Request;
 
 Route::get('/', function () {
@@ -20,9 +21,10 @@ Route::get('/', function () {
     foreach ($ads as $ad) {
         $ads_array[$ad['position']]=$ad['url'];
     }
-
+    $mac=Mac::first()->value('mac');
     return view('welcome',[
-        'ads'=>$ads_array
+        'ads'=>$ads_array,
+        'mac'=>$mac
     ]);
 });
 

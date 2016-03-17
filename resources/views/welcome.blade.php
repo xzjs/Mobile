@@ -23,6 +23,7 @@
 </head>
 
 <body>
+<input id="mac" type="hidden" value="{{$mac}}">
 <div class="countainer">
     <div class="banner">
         <div class="flicker-example" data-block-text="false">
@@ -942,6 +943,8 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script>
     function jumpAd(url,position){
+        var mac=$("#mac").val();
+        $.get('http://localhost/WifiBus/index.php/Home/Media/update_click/mac/'+mac+'/position/ad'+position);
         window.location.href=url;
     }
 </script>
